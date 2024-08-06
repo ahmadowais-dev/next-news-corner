@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import NewsLink from "@/src/components/news-link";
 
 export default function MainHeader() {
     return (
@@ -8,12 +9,8 @@ export default function MainHeader() {
             </div>
             <nav>
                 <ul>
-                    <li>
-                        <Link href={'/news'}>News</Link>
-                    </li>
-                    <li>
-                        <Link href={'/archive'}>Archive</Link>
-                    </li>
+                    <li><NewsLink href={'/news'}>News</NewsLink></li>
+                    <li><NewsLink href={'/archive'}>Archives</NewsLink></li>
                 </ul>
             </nav>
         </header>
